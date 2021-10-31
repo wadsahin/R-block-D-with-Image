@@ -1,64 +1,116 @@
 *{
     box-sizing: border-box;
-
 }
-.row{
-    display:flex;
+.main-div{
+    display: flex;
     flex-wrap: wrap;
-    background-color: aliceblue;
-
 }
 
-.column{
-    margin:5px;
-    width: 32%;
-    background-color: rgb(175, 175, 175);
-    border-radius: 12px;
+.div-1{
+    width: 50%;
+   
+}
+
+.div-2{
+    width: 50%;
+  
 
 }
-.column img{
-    width: 70%;
-    padding-top: 10px;
-    margin-left: 25px;
+.div-1 h1{
+    width:70%;
+    margin-top:85px;
+    margin-bottom: 25px;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-break: auto;
    
 
 }
-.column h1{
-    text-align: center;
-    color:#ff5722;
 
+.div-1 .style-btn{
+    padding:15px 30px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right,rgb(216, 79, 79),rgb(235, 160, 0),rgb(243, 182, 13));
+    border:none;
+ 
+
+}
+
+.div-1 .style-btn:hover{
+    background-image: linear-gradient(to left,red,rgb(243, 255, 73),orange);
     
 }
-.column p{
-    text-align: center;
-    color: rgb(255, 253, 249);
+
+.div-1 p{
+    width: 70%;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(116, 121, 121);
+    font-size: 15px;
+
+    
 
 }
 
-
-.double-style{
-   padding-left: 35px;
-   
+.div-2 img{
+    width: 70%;
 }
 
-@media only screen and (max-width:992px){
-    .column{
-        width: 48%;
-        background-color: indigo;
-        color:orangered
+@media screen and (max-width:700px) {
+    .div-1{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    
+    .div-2{
+        width:100%;
+        
+    }
+
+    .div-2 img {
+        margin-left: px;
+        width: 40%;
+       
+    }
+
+    .div-1 h1{margin:auto;}
+    .div-1 p{margin:auto;}
+    .div-1 .style-btn{margin-left: 90px;
+            margin-bottom: 12px;
+            margin-top: 12px;
+
+    }
+        
+}
+
+@media only screen and (max-width:1020px) {
+    .div-2 img{
+        margin-top:35px;
+        padding-right: 20px;
+        width: 100%;
+       
+
+
+
+    }
+
+    .div-1{
+
+
     }
 
 
 }
 
-@media only screen and (max-width:600px){
-    .column{
-        width: 99%;
-        background-color: rgb(84, 121, 29);
-
+/* @media screen and (max-width:600px) {
+    .div-1{
+        width: 100%;
     }
 
 
-}
-
+    
+} */
 
